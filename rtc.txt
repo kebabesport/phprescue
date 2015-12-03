@@ -1,0 +1,39 @@
+
+Le défi: Défi WebRTC
+Theme:
+Développement Web
+Lot:
+
+1000 Euros de chèques cadeaux
+
+Le web RTC :
+
+Le WebRTC (Web Real Time Communication), est une interface de programmation ayant pour but de permettre une communication en temps réel au travers des navigateurs web. Dans l’architecture WebRTC, un serveur central est utilisé afin de mettre en relation deux pairs.
+
+Déscription du défi :
+
+Viveris Technologies vous propose de développer une application web utilisant la technologie WebRTC. L’application devra mettre en place un échange de données (données brutes, ou flux médias) entre deux clients. La mise en relation des clients fait également parti du défi, mais aucune contrainte n’est imposée sur la manière dont cela est fait.
+
+Critères de notation :
+
+Le défi récompensera la meilleure application offrant la meilleure exploitation de technologie WebRTC. Les fonctionnalités, l’originalité et la clarté du code source seront évalués afin de déterminer la meilleure application.
+
+Liens :
+
+    https://fr.wikipedia.org/wiki/WebRTC
+    https://github.com/webrtc/samples
+    http://www.webrtc.org/
+
+Elements attendus
+
+    Description fonctionnelle de l’application
+    Une description technique (non détaillée) de l’application et de son architecture globale.
+    Le code source de l’application ainsi qu’un manuel d’installation afin que nous puissions tester l’application.
+
+Mode de restitution
+
+URL d'accés à l'application et aux documents
+
+A défaut, Viveris aura à disposition un serveur installé. Les candidats devront alors fournir archives/packages, script éventuels d'initialisation des données et note d'installation.
+
+Les documents devront être au format PDF standard

@@ -1,0 +1,21 @@
+
+Le défi: Données Personnelles
+Theme:
+Conception, Développement
+Lot:
+
+400 € sous forme de bons (1er 250EUR, 2e 100EUR, 3e 50EUR)
+
+Les applications connectées ou les applications web constituent de manière plus ou moins explicite un profil pour chaque utilisateur dans le but annoncé d'aider celui-ci dans les utilisations futures par une personnalisation de ses habitudes d'utilisation de l'application. En particulier, lors des utilisations futures, une telle application retiendra les choix précédents et proposera à l'utilisateur un parcours personnalisé.
+
+En autorisant de suivre ses actions, l'utilisateur livre implicitement des informations personnelles au concepteur de l'application, en particulier sur ses intérêts, mais parfois on donne même certaines informations directement, et très souvent de manière excessive par rapport au but annoncé : la personnalisation de l'application, ce qui est illégal. En effet, une société peu scrupuleuse pourra ensuite vendre ces informations acquises via son application à des annonceurs, menaçant de ce fait la confidentialités des données personnelles.  La Commission Européenne préconise de limiter ces pratiques.
+
+Le but de ce défi est d'intégrer dans l'application développée la notion du respect de la vie privée.
+Elements attendus
+
+Un rapport qui présente les solutions employées pour assurer le respect de la vie privée des utilisateurs, et la sécurité de leurs données personnelles.
+
+Ce rapport précisera les points suivants: - Contexte - Concepts employés - Technologies - Solution technique - Preuve du concept (démo, ...)
+Mode de restitution
+
+Envoi d'un fichier compressé à l'adresse spécifique: defi.personal.data@gmail.com
