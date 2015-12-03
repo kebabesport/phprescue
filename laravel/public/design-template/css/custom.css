@@ -6,6 +6,11 @@
     
 }
 
+.center {
+    display: block;
+    margin: auto;
+}
+
 body {
     padding-top: 70px; 
 }
