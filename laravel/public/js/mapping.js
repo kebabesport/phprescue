@@ -18,14 +18,49 @@ function init(){
     map.addLayer(newLayer);
 }
 
-function addUser(){
+function addUser(coordinatesFromLocalisation, userName){
+
+    colorNewUser = new ol.Color([Math.random()*255, Math.random()*255, Math.random()*255]);
+
+    fillNewUser = new ol.style.Fill({
+        color: colorNewUser
+    });
+
+    strokeNewUser = new ol.style.Stroke({
+        color: colorNewUser
+    });
+
+    styleNewUser = new ol.style.Style({
+        fill: fillNewUser,
+        stroke: strokeNewUser
+    });
+
+    coordinatesNewUser = ol.proj.fromLonLat(coordinatesFromLocalisation,'EPSG:3857' );
+
+    geomNewUser = new ol.geom.Point({
+        coordinates: coordinatesNewUser
+    });
+
+    featureNewUser = new ol.Feature({
+       geometry: geomNewUser
+    });
 
     sourceNewUser = new ol.source.Vector({
         feature: featureNewUser
     });
 
     layerNewUser = new ol.layer.Vector({
-        source: sourceNewUser
+        source: sourceNewUser,
+        name: userName
     });
     map.addLayer(layerNewUser);
+}
+
+function removeUser(userName) {
+    for (var layer in map.getLayers()) {
+        if (layer.get(name) == userName) {
+            map.removeLayer(layer);
+            break;
+        }
+    }
 }
