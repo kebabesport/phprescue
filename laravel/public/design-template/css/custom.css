@@ -1,5 +1,13 @@
+.connectbutton {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    
+}
+
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 70px; 
 }
 
 .navbar-fixed-top .nav {
@@ -16,10 +24,11 @@ footer {
 
 @media(min-width:768px) {
     body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 100px; 
     }
 
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+
 }
