@@ -10,16 +10,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kebab Rescue - Localisation</title>
+    <title>PAGE DE TEST</title>
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Social CSS -->
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Bootstrap Social CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
-
-    <!-- CSS Openlayer -->
-    <link href="../js/ol.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,15 +31,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Openlayers -->
-    <script src="../js/ol.js"></script>
-
-    <!-- Gestion carte -->
-    <script src="../js/mapping.js"></script>
-
 </head>
 
-<body onload="init()">
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -64,7 +61,7 @@
                         <a href="#">Aide</a>
                     </li>
                     <li>
-                        <a href="#" >Contact</a>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -78,41 +75,16 @@
 
     <!-- Content Row -->
         <div class="row">
-            <!-- MAP Container -->
-            <div class="col-lg-12">
-                <div class="well text-center">
-                    <h2>Carte</h2>
 
-                    <!-- Map -->
-                    <div id="map" ></div>
-                    <!-- End of Map -->                
-
-                </div>
+            <div class="col-lg-8 center">
+                <button onclick="toDeleteTest()">Obtenir localisation!</button>
+                <h1 id="loc"></h1>
             </div>
-            <!-- End of MAP Container-->
+
         </div>
         <!-- End of content Row -->
 
         <hr>
-        <!-- Under-map Row -->
-        <div class="row">
-            <div class="col-md-8">
-                <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="TEMPLATE">
-            </div>
-            
-            <!-- TODO TEMPLATE Title+Text+Button -->
-            <div class="col-md-4">
-                <h1>Title of explanation</h1>
-                <p>Explication text is to be written here</p>
-                <a class="btn btn-primary btn-lg" href="#">Template Button!</a>
-            </div>
-            <!-- TODO End of Title+Text+Button -->
-            
-        </div>
-        <!-- End of Under-map Row -->
-        
-       
-
 
         <!-- Footer -->
         <footer>
@@ -133,8 +105,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
-
+    <!-- Test localisation -->
+    <script src="js/position_api.js"></script>
 
 </body>
 
