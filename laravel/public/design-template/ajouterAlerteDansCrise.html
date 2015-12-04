@@ -10,17 +10,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kebab Rescue - Localisation</title>
+    <title>CREER UNE CRISE</title>
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
-
-    <!-- CSS Openlayer -->
-    <link href="../js/ol.css" rel="stylesheet">
-    @yield('css')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,16 +25,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Openlayers -->
-    <script src="../js/ol.js"></script>
-
-    <!-- Gestion carte -->
-    <script src="../js/mapping.js"></script>
-    @yield('js')
-
 </head>
 
-<body onload="init()">
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -52,7 +41,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img id="headerlogo" src="img/kebabrescue-logo-medium.png" height="35" alt="Kebab Rescue">
+                    <img src="http://placehold.it/150x50&text=Logo" alt="">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,45 +66,40 @@
 
     <!-- Page Content -->
     <div class="container">
-
-    <!-- Content Row -->
-        <div class="row">
-            <!-- MAP Container -->
-            <div class="col-lg-12">
-                <div class="well text-center">
-                    <h2>Carte</h2>
-
-                    <!-- Map -->
-                    <div id="map" ></div>
-                    <!-- End of Map -->
-
-                </div>
-            </div>
-            <!-- End of MAP Container-->
-        </div>
-        <!-- End of content Row -->
-
-        <hr>
-        <!-- Under-map Row -->
-        <div class="row">
-            <div class="col-md-8">
-                <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="TEMPLATE">
-            </div>
-
-            <!-- TODO TEMPLATE Title+Text+Button -->
-            <div class="col-md-4">
-                <h1>Title of explanation</h1>
-                <p>Explication text is to be written here</p>
-                <a class="btn btn-primary btn-lg" href="#">Template Button!</a>
-            </div>
-            <!-- TODO End of Title+Text+Button -->
-
-        </div>
-        <!-- End of Under-map Row -->
-
-
-
-
+		
+		<!-- Alerte -->
+		<form class="col-lg-6">
+			<div class="form-group">
+			<legend>Sélectionner la crise</legend>
+				<select id="select" class="form-control">
+					<option>Crise 1</option>
+					<option>Crise 2</option>
+					<option>Crise 3</option>
+				</select>
+			</div>
+			<legend>Ajouter une alerte à une crise</legend>
+			<div class="form-inline">
+				<div class="input-group col-lg-6">   
+					<select id="select" class="form-control">
+						<option>Alerte 1</option>
+						<option>Alerte 2</option>
+					</select>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">Ajouter</button>
+						<button class="btn btn-default" type="button">Retirer</button>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="texte">Commentaires : </label>
+				<input id="text" type="text" class="form-control">
+			</div>
+			<button>Ajouter</button>
+		</form>
+		<!-- End of Alerte -->
+		
+		<hr>
+		
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -134,9 +118,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-
-
 
 </body>
 
