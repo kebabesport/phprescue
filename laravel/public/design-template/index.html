@@ -20,6 +20,7 @@
 
     <!-- CSS Openlayer -->
     <link href="../js/ol.css" rel="stylesheet">
+    @yield('css')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,6 +34,7 @@
 
     <!-- Gestion carte -->
     <script src="../js/mapping.js"></script>
+    @yield('js')
 
 </head>
 
@@ -85,7 +87,7 @@
 
                     <!-- Map -->
                     <div id="map" ></div>
-                    <!-- End of Map -->                
+                    <!-- End of Map -->
 
                 </div>
             </div>
@@ -99,7 +101,7 @@
             <div class="col-md-8">
                 <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="TEMPLATE">
             </div>
-            
+
             <!-- TODO TEMPLATE Title+Text+Button -->
             <div class="col-md-4">
                 <h1>Title of explanation</h1>
@@ -107,11 +109,11 @@
                 <a class="btn btn-primary btn-lg" href="#">Template Button!</a>
             </div>
             <!-- TODO End of Title+Text+Button -->
-            
+
         </div>
         <!-- End of Under-map Row -->
-        
-       
+
+
 
 
         <!-- Footer -->

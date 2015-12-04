@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'DashboardController@index');
+
+Route::get('login', 'SessionsController@create');
+Route::post('login', 'SessionsController@store');
+Route::get('logout', 'SessionsController@destroy');
+
+Route::resource('sessions', 'SessionsController', ['only' => ['index', 'create', 'destroy']]);
+
+Route::get('login/facebook', function(){
+  return Socialize::with('facebook')->redirect();
 });
+
+Route::get('login/facebook/callback', 'SessionsController@facebook');
