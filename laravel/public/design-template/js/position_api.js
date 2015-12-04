@@ -3,7 +3,7 @@ var u_lat;
 var accepted = false;
 
 // Returns user's LONGITUDE
-function getLongitute () {
+function getLongitude () {
 	if (accepted)
 		return u_lon;
 	else
@@ -58,7 +58,7 @@ function getLocation() {
 //DELETE THIS WHEN USING FOR REAL!
 function toDeleteTest(){
 	var display = document.getElementById("loc");
-	display.innerHTML = "Longitude="+getLongitute()+"</br>"+"Latitude="+getLatitude();
+	display.innerHTML = "Longitude="+getLongitude()+"</br>"+"Latitude="+getLatitude();
 }
 getLocation();
 //END DELETE
